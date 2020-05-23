@@ -1,0 +1,69 @@
+{
+  "name": "@eterna/configurator",
+  "version": "0.1.0",
+  "description": "Configures tooling for JavaScript applications.",
+  "keywords": [
+    "react",
+    "tooling",
+    "typescript",
+    "cli"
+  ],
+  "homepage": "https://github.com/nickstaroba/configurator",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickstaroba/configurator.git"
+  },
+  "license": "MIT",
+  "author": "Nick Staroba",
+  "main": "index.js",
+  "bin": "cli.js",
+  "files": [
+    "templates",
+    "index.js",
+    "cli.js"
+  ],
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "build:watch": "rollup --config rollup.config.js --watch",
+    "clean:build": "npx --ignore-existing --quiet rimraf dist/**/*",
+    "clean:build-deps": "npx --ignore-existing --quiet rimraf dist/node_modules",
+    "clean:deps": "npx --ignore-existing --quiet rimraf package-lock.json pnpm-lock.yaml node_modules",
+    "lint": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint \"**/*.{js,jsx}\" --fix",
+    "lint:prettier": "prettier \"./**/*.{css,html,js,json,jsx,md,scss,yaml}\" --write",
+    "release": "standard-version"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "prepare-commit-msg": "git-hooks/prepare-commit-msg.sh ${HUSKY_GIT_PARAMS}",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "meow": "7.0.1",
+    "mrm-core": "4.1.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4",
+    "@rollup/pluginutils": "3.0.10",
+    "eslint": "7.1.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-jest": "23.13.1",
+    "eslint-plugin-simple-import-sort": "5.0.3",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.6",
+    "prettier": "2.0.5",
+    "rimraf": "3.0.2",
+    "rollup": "2.10.7",
+    "rollup-plugin-copy": "3.3.0",
+    "rollup-plugin-filesize": "9.0.0",
+    "rollup-plugin-terser": "5.3.0",
+    "rollup-plugin-visualizer": "4.0.4",
+    "standard-version": "8.0.0"
+  }
+}
