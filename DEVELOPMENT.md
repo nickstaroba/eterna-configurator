@@ -59,7 +59,7 @@ setx /m PATH "%PATH%;C:\Program Files\Git\bin"
    ```json
    {
      "dependencies": {
-       "@eterna/configurator": "file:../configurator/dist"
+       "@eterna/configurator": "file:../eterna-configurator/dist"
      }
    }
    ```

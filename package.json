@@ -8,10 +8,10 @@
     "typescript",
     "cli"
   ],
-  "homepage": "https://github.com/nickstaroba/configurator",
+  "homepage": "https://github.com/nickstaroba/eterna-configurator",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickstaroba/configurator.git"
+    "url": "git+https://github.com/nickstaroba/eterna-configurator.git"
   },
   "license": "MIT",
   "author": "Nick Staroba",
