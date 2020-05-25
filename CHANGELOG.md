@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/nickstaroba/eterna-configurator/compare/v0.1.1...v0.1.2) (2020-05-25)
+
+
+### Bug Fixes
+
+* **project:** [[#3](https://github.com/nickstaroba/eterna-configurator/issues/3)] correcting supported application types in README.md ([ef5eb32](https://github.com/nickstaroba/eterna-configurator/commit/ef5eb327c4a1cd4b2a327ddcd0a073995d41c270))
+
 ### [0.1.1](https://github.com/nickstaroba/eterna-configurator/compare/v0.1.0...v0.1.1) (2020-05-25)
 
 

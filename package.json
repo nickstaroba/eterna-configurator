@@ -1,6 +1,6 @@
 {
   "name": "@eterna/configurator",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Configures tooling for JavaScript applications.",
   "keywords": [
     "react",
