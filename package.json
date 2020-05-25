@@ -16,7 +16,9 @@
   "license": "MIT",
   "author": "Nick Staroba",
   "main": "index.js",
-  "bin": "cli.js",
+  "bin": {
+    "configurator": "cli.js"
+  },
   "files": [
     "templates",
     "index.js",
