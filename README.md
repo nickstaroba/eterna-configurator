@@ -30,7 +30,7 @@ $ configurator -a react-ts
 ## Options
 
 ```
---app, -a       Application type (${applicationTypesAsString}).
+--app, -a       Application type (react, react-ts).
 --force, -f     Overwrite without prompting.
 --help, -h      Show usage information.
 ```
