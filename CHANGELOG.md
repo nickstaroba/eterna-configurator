@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/nickstaroba/eterna-configurator/compare/v0.1.2...v0.1.3) (2020-05-25)
+
+
+### Bug Fixes
+
+* **templates:** [[#4](https://github.com/nickstaroba/eterna-configurator/issues/4)] adding stylelint to npm scripts ([26f67f0](https://github.com/nickstaroba/eterna-configurator/commit/26f67f06a8a11f899e904724e7e80c9d9bc16c04))
+
 ### [0.1.2](https://github.com/nickstaroba/eterna-configurator/compare/v0.1.1...v0.1.2) (2020-05-25)
 
 
