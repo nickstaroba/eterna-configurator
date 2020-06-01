@@ -7,6 +7,9 @@ const path = require("path");
 module.exports = () => ({
   devServer: {
     historyApiFallback: true,
+    hot: true,
+    inline: true,
+    open: true,
   },
   entry: path.resolve(__dirname, "src/index.tsx"),
   module: {
@@ -67,14 +70,16 @@ module.exports = () => ({
   },
   output: {
     filename: "js/bundle.js",
-    path: `${__dirname}/dist/`,
+    path: path.resolve(__dirname, "dist"),
     publicPath: "/",
   },
   plugins: [
-    new CopyWebpackPlugin([{ from: "public", to: "." }]),
+    new CopyWebpackPlugin({
+      patterns: [{ from: path.resolve(__dirname, "src/public"), to: "." }],
+    }),
     new HtmlWebpackPlugin({
-      filename: "./index.html",
-      template: "./src/index.html",
+      filename: "index.html",
+      template: path.resolve(__dirname, "src/index.html"),
     }),
     new MiniCssExtractPlugin({
       chunkFilename: "[id].css",
@@ -84,7 +89,7 @@ module.exports = () => ({
   ],
   resolve: {
     alias: {
-      react: path.resolve("./node_modules/react"),
+      react: path.resolve("node_modules/react"),
     },
     extensions: [".ts", ".tsx", ".js", ".jsx", ".json", ".css", ".scss"],
   },
