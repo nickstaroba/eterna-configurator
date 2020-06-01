@@ -33,7 +33,11 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/*.config.js", "**/*.stories.js", "**/*.test.js"]
+        "devDependencies": [
+          "**/*.config.js",
+          "**/*.stories.js",
+          "**/*.test.jsx"
+        ]
       }
     ],
     "import/prefer-default-export": "off",
