@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/nickstaroba/eterna-configurator/compare/v0.1.3...v0.1.4) (2020-06-02)
+
+
+### Bug Fixes
+
+* **linting:** [[#6](https://github.com/nickstaroba/eterna-configurator/issues/6)] correcting dev dependencies rule ([76cccf9](https://github.com/nickstaroba/eterna-configurator/commit/76cccf9ed06eb5b293be62d419774e9ab8910369))
+* **package.json:** [[#7](https://github.com/nickstaroba/eterna-configurator/issues/7)] correcting dev dependencies and scripts ([2673f5b](https://github.com/nickstaroba/eterna-configurator/commit/2673f5b8b4e1700d584f005a97cd1406ccc72d04))
+
 ### [0.1.3](https://github.com/nickstaroba/eterna-configurator/compare/v0.1.2...v0.1.3) (2020-05-25)
 
 
