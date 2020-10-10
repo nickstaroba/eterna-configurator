@@ -7,7 +7,6 @@
     "airbnb-base",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:jest/recommended",
     "prettier"
   ],
   "globals": {
@@ -18,7 +17,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["import", "jest", "simple-import-sort"],
+  "plugins": ["import", "simple-import-sort"],
   "rules": {
     "import/no-extraneous-dependencies": [
       "error",
